@@ -11,12 +11,12 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
+        <%= link_to "Cospa.com", '#', id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "ユーザー登録（無料）",   '#' %></li>
+            <li><%= link_to "ログイン",   '#' %></li>
+            <li><%= link_to "ご利用案内", '#' %></li>
           </ul>
         </nav>
       </div>
@@ -25,6 +25,16 @@
     <div class="container">
       <%= yield %>
     </div>
-
+    <footer class="navbar navbar-fixed-bottom navbar-inverse">
+      <div class="container">
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "ユーザー登録（無料）",   '#' %></li>
+          <li><%= link_to "ログイン",   '#' %></li>
+          <li><%= link_to "ご利用案内", '#' %></li>
+        </ul>
+      </nav>
+      </div>
+    </footer>
   </body>
 </html>
