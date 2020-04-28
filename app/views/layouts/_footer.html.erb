@@ -1,13 +1,17 @@
 <footer class="footer">
-  <small>
-    The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
-  </small>
-  <nav>
+  <nav class="row">
     <ul>
+      <li><%= link_to "HOME",   root_path %></li>
+      <li><%= link_to "ご利用案内",   root_path %></li>
+      <li><%= link_to "利用規約",   root_path %></li>
+      <li><%= link_to "プライバシーポリシー",   root_path %></li>
       <li><%= link_to "About",   about_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
       <li><a href="http://news.railstutorial.org/">News</a></li>
     </ul>
   </nav>
+  <div class="row copyright">
+    Copyright @ 2020 Y.N All rights reserved.
+  </div>
+
 </footer>

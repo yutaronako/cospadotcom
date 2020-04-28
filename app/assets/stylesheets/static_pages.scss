@@ -1,3 +1,41 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'font-awesome';
+
+.static_pages_title{
+  margin:0px 15px;
+  margin-top: 30px;
+}
+
+.about_titile{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: font-awesome;
+  margin:15px;
+
+}
+
+.about_contentes{
+  font-size: 18px;
+  padding-bottom: 35px;
+  margin:0px 15px;
+}
+
+
+
+//contact page
+
+.contact_titile{
+  font-weight: bold;
+  margin:0px 15px;
+}
+
+.contact_contents{
+  padding-top: 20px;
+  font-size: 18px;
+  font-family: FontAwesome;
+  margin:0px 15px;
+}

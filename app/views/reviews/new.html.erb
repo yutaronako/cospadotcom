@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row review_post">
+    <%= form_with(model:Review,local:true) do |form| %>
+      <div class="review_post_title">
+        製品ジャンル
+      <% categories = {"お風呂" => "bath","トイレ" => "toilet","リビング" => "living", "窓まわり" => "window", "玄関" => "entrance", "エクステリア"=>"exteria","洗面化粧台"=>"washbasin", "キッチン"=>"kitchen"} %>
+      <%= form.select:product_category, categories, class:"form-control" %>
+      </div>
+
+      <div class="review_post_title">
+        メーカー名
+      <% companies = %w(LIXIL TOTO Panasonic 三協 YKKAP 文化シャッター) %>
+      <%= form.select:product_company, companies, class:"form-control" %>
+      </div>
+
+      <div class="review_post_title">
+          商品名
+      <% names = %w(アライズ スパージュ リノビオ サザナ シンラ Wtシリーズ WHシリーズ Lクラス リフォムス オフローラ MR-x) %>
+      <%= form.select:product_name, names, class:"form-control" %>
+      </div>
+
+      <div class="review_post_title">
+          価格
+      <%= form.number_field:product_price, class:"form-control" %>
+      </div>
+
+      <div class="review_post_title">
+        評価点
+        <div class="review_point">
+          デザイン
+        <%= form.range_field:design,min:0,max:5,step:0.1, class:"form-control" %>
+        </div>
+        <div class="review_point">
+          価格満足度
+          <%= form.range_field:cospa,min:0,max:5,step:0.1 , class:"review_point form-control"%>
+        </div>
+        <div class="review_point">
+          使いやすさ
+          <%= form.range_field:usability,min:0,max:5,step:0.1, class:"review_point form-control" %>
+        </div>
+        <div class="review_point">
+          お掃除しやすさ
+          <%= form.range_field:cleanability,min:0,max:5,step:0.1, class:"review_point form-control" %>
+        </div>
+        <div class="review_point">
+          耐久性
+          <%= form.range_field:durability,min:0,max:5,step:0.1, class:"review_point form-control" %>
+        </div>
+      </div>
+
+      <div class="review_post_title">
+        口コミ
+      <%= form.text_area:review, class:"form-control" %>
+      </div>
+      <div class="">
+        <%= form.submit "投稿", class: "review_post_title btn btn-primary" %>
+      </div>
+    <% end %>
+  <div class="">
+
+  </div>
+
+  </div>
+</div>
