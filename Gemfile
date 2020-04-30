@@ -37,6 +37,10 @@ gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'font-awesome-rails'
+
+
+
 group :production do
   gem 'pg', '0.20.0'
 end

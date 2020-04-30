@@ -1,131 +1,65 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="topoftop">
+    <div class="top justify-content-center container">
+      <h1 class="top_catch">お探しの住宅設備は何でしょう？</h1>
+      <div class="top_box">
+        <div class="top_box_text justify-content-center">
+            お探しの商品に関するキーワードを入れてください
+        </div>
+        <form>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="例）トイレ、TOTO、サティス">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+        </form>
 
-<div class="center jumbotron">
-  <h1>「働く」のすべてを、オープンに</h1>
+      </div>
 
-
-  <div class="container">
-  <div class="row justify-content-center">
-  <div class="col-lg-8">
-    <form class="form-inline">
-    <label for="inputPassword2" class="sr-only">Password</label>
-    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-    </form>
+  <!-- 検索フォーム -->
+    <div class="signupbtn row justify-content-center">
+        <%= link_to "新規ユーザー登録", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
   </div>
-  </div>
-  </div>
-  <!-- <div class="form-group search_container col-lg-6" method="get" action="#">
-
-    <input type="text" size="25" placeholder="キーワード検索">
-    <input type="submit" value="&#xf002">
-  </div> -->
-
-  <div class="">
-  </div>
-
-
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-
-
 </div>
+
 <div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-2 review">
-  <p>AMAZON</p>
-  <p>★★★★☆4.09</p>
-  <p>社員の口コミ：1000件</P>
-  <p>求人情報：32件</p>
-</div>
-<div class="col-lg-2 review">
-  <p>AMAZON</p>
-  <p>★★★★☆4.09</p>
-  <p>社員の口コミ：1000件</P>
-  <p>求人情報：32件</p>
-</div>
-<div class="col-lg-2 review">
-  <p>AMAZON</p>
-  <p>★★★★☆4.09</p>
-  <p>社員の口コミ：1000件</P>
-  <p>求人情報：32件</p>
-</div>
-<div class="col-lg-2 review">
-  <p>AMAZON</p>
-  <p>★★★★☆4.09</p>
-  <p>社員の口コミ：1000件</P>
-  <p>求人情報：32件</p>
-</div>
-<div class="col-lg-2 review">
-  <p>AMAZON</p>
-  <p>★★★★☆4.09</p>
-  <p>社員の口コミ：1000件</P>
-  <p>求人情報：32件</p>
-</div>
-</div>
-</div>
 
-<div class="col-lg-12">
-  <h3>Pick up 企業</h3>
-  <div class="review">
-    <p>amazon</p>
-</div>
-</div>
-
-<div class="col-lg-12">
-  <h3>求人検索</h3>
-  <div class="review">
-    <p>amazon</p>
-</div>
-</div>
-
-<div class="col-lg-12">
-  <h3>総合評価ランキング</h3>
-  <div class="review">
-    <div class="container">
-    <div class="row justify-content-center">
-    <div class="col-lg-2 review">
-      <p>AMAZON</p>
-      <p>★★★★☆4.09</p>
-      <p>社員の口コミ：1000件</P>
-      <p>求人情報：32件</p>
+<!-- 商品選択 -->
+  <div class="search">
+    <ul class="tabnav">
+        <li><a href="#from_kuukan">空間から探す</a></li>
+        <li><a href="#from_maker">メーカーから探す</a></li>
+    </ul>
+    <div class="tabcontent">
+      <div id="from_kuukan"><%= render 'layouts/from_kuukan' %></div>
+      <div id="from_maker"><%= render 'layouts/from_maker' %></div>
     </div>
-    <div class="col-lg-2 review">
-      <p>AMAZON</p>
-      <p>★★★★☆4.09</p>
-      <p>社員の口コミ：1000件</P>
-      <p>求人情報：32件</p>
-    </div>
-    <div class="col-lg-2 review">
-      <p>AMAZON</p>
-      <p>★★★★☆4.09</p>
-      <p>社員の口コミ：1000件</P>
-      <p>求人情報：32件</p>
-    </div>
-    <div class="col-lg-2 review">
-      <p>AMAZON</p>
-      <p>★★★★☆4.09</p>
-      <p>社員の口コミ：1000件</P>
-      <p>求人情報：32件</p>
-    </div>
-    <div class="col-lg-2 review">
-      <p>AMAZON</p>
-      <p>★★★★☆4.09</p>
-      <p>社員の口コミ：1000件</P>
-      <p>求人情報：32件</p>
-    </div>
-    </div>
-    </div>
-</div>
-</div>
+  </div>
+
+<script type="text/javascript">
+
+  jQuery(function($){
+      $('.tabcontent > div').hide();
+
+      $('.tabnav a').click(function () {
+          $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+
+          $('.tabnav a').removeClass('active');
+          $(this).addClass('active');
+
+          return false;
+      }).filter(':eq(0)').click();
+  });
+</script>
+
+
+  <!-- 広告 -->
 
 
 
 
 
-<div>
 
 </div>
-
-
-<%# <%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %> %>
