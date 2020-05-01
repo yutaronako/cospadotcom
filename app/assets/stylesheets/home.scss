@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-// @import "font-awesome";
+@import "font-awesome";
 
 body {
   padding-top: 30px;
@@ -219,6 +219,7 @@ input {
 
 // 空間画面
 .from_kuukan{
+  width:95%;
   h2{
     margin: 20px;
     padding-bottom:10px;

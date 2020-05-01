@@ -39,6 +39,8 @@ gem 'rails-controller-testing'
 
 gem 'font-awesome-rails'
 
+gem "jquery-rails"
+
 
 
 group :production do
