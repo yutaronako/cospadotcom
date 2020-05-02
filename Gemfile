@@ -36,10 +36,13 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'rails-controller-testing'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "jquery-rails",'4.3.1'
+gem 'font-awesome-rails'
+gem 'chart-js-rails','~> 0.1.4'
 
 gem 'font-awesome-rails'
 
-gem "jquery-rails"
+
 
 
 

@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+<<<<<<< HEAD
 @import "font-awesome";
+=======
+@import 'font-awesome';
+>>>>>>> advanced-login
 
 body {
   padding-top: 30px;
@@ -219,7 +223,10 @@ input {
 
 // 空間画面
 .from_kuukan{
+<<<<<<< HEAD
   width:95%;
+=======
+>>>>>>> advanced-login
   h2{
     margin: 20px;
     padding-bottom:10px;

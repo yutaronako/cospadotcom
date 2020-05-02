@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
    @user = User.find(params[:id])
+   @reviews = @user.reviews.paginate(page:params[:page])
  end
 
   def new
@@ -17,6 +18,10 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+
+  def edit
+   @user = User.find(params[:id])
+ 　end
 
     private
 

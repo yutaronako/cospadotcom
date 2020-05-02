@@ -1,2 +1,94 @@
+<<<<<<< HEAD
 <h1>Products#new</h1>
 <p>Find me in app/views/products/new.html.erb</p>
+=======
+<div class="container product">
+  <div class="row">
+    <div class="col-md-9 col-lg-9">
+
+      <div class="product_review_top row">
+          <div class="col-md-4 col-lg-4">
+            <h2 class="product_name">製品名</h2>
+            <p class="company_name">メーカー：LIXIL</p>
+          </div>
+          <div class="col-md-8 col-lg-8 product_review">
+              <div class="review_score review_star">
+                <span class="icon_star"><i class="fa fa-star"></i></span>
+                <span class="icon_star"><i class="fa fa-star"></i></span>
+                <span class="icon_star"><i class="fa fa-star"></i></span>
+                <span class="icon_star"><i class="fa fa-star"></i></span>
+                <span class="icon_star"><i class="fa fa-star"></i></span>
+                5
+              </div>
+              <div class="review_number">
+                口コミ数：12件
+              </div>
+          </div>
+        </div>
+
+  <div class="row">
+    <div class="col-md-4 col-lg-4">
+      <%= image_tag 'batroom.jpg', class:"product_img" %>
+    </div>
+    <div class="review_chart col-md-8 col-lg-8">
+      <canvas id="reviewRaderChart"></canvas>
+       <!-- CDN -->
+     　<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+       <script>
+         var ctx = document.getElementById("reviewRaderChart");
+         var reviewRadarChart = new Chart(ctx, {
+             type: 'radar',
+             data: {
+                 labels: ["デザイン", "価格満足度", "使いやすさ", "お掃除しやすさ", "耐久性"],
+                 datasets: [{
+                     label: 'Aさん',
+                     data: [4.1,4.0,3.0,3.6,4.0],
+                     backgroundColor: 'RGBA(225,95,150, 0.5)',
+                     borderColor: 'RGBA(225,95,150, 1)',
+                     borderWidth: 1,
+                     pointBackgroundColor: 'RGB(46,106,177)',
+                 }]
+             },
+             options: {
+               legend:{
+                 display:false,
+               },
+               scale:{
+                    pointLabels:{
+                      fontSize:15,
+                      fontColor:"black"
+                      },
+                     ticks:{
+                         suggestedMin: 0,
+                         suggestedMax: 5,
+                         stepSize: 1,
+                         callback: function(value, index, values){
+                             return  value
+                         }
+                      }
+                    }
+                 }
+             });
+
+         </script>
+
+    </div>
+
+  </div>
+
+  <h3 class="price">
+    価格：10~25万円
+  </h3>
+  <h3 class="installation_img">
+    施工イメージ
+  </h3>
+  <h3 class="review_order">
+    口コミ（投稿順に）
+  </h3>
+    </div>
+
+    <div class="col-md-3 col-lg-3"><%= render 'products/sidebar' %></div>
+    </div>
+</div>
+>>>>>>> advanced-login

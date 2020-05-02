@@ -5,27 +5,41 @@ one:
   product_company: MyString
   product_category: MyString
   product_price: 1
+<<<<<<< HEAD
   user_name: MyString
+=======
+  posted_username: MyString
+>>>>>>> advanced-login
   design: 1
   cospa: 1
   usability: 1
   cleanability: 1
   durability: 1
   review: MyString
+<<<<<<< HEAD
   product_id: 1
   user_id: 1
+=======
+>>>>>>> advanced-login
 
 two:
   product_name: MyString
   product_company: MyString
   product_category: MyString
   product_price: 1
+<<<<<<< HEAD
   user_name: MyString
+=======
+  posted_username: MyString
+>>>>>>> advanced-login
   design: 1
   cospa: 1
   usability: 1
   cleanability: 1
   durability: 1
   review: MyString
+<<<<<<< HEAD
   product_id: 1
   user_id: 1
+=======
+>>>>>>> advanced-login

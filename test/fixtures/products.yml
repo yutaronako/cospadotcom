@@ -6,11 +6,19 @@ one:
   category: MyString
   lowest_price: 1
   highest_price: 1
+<<<<<<< HEAD
   release_date: 2020-05-01 07:17:11
   review_design: 1
   review_cospa: 1
   review_usability: 1
   review_cleanablity: 1
+=======
+  release_date: 2020-04-27 10:09:43
+  review_design: 1
+  review_cospa: 1
+  review_usability: 1
+  review_cleanability: 1
+>>>>>>> advanced-login
   review_durability: 1
 
 two:
@@ -19,9 +27,17 @@ two:
   category: MyString
   lowest_price: 1
   highest_price: 1
+<<<<<<< HEAD
   release_date: 2020-05-01 07:17:11
   review_design: 1
   review_cospa: 1
   review_usability: 1
   review_cleanablity: 1
+=======
+  release_date: 2020-04-27 10:09:43
+  review_design: 1
+  review_cospa: 1
+  review_usability: 1
+  review_cleanability: 1
+>>>>>>> advanced-login
   review_durability: 1
